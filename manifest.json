@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "URL Blocker",
+  "version": "1.0",
+  "description": "Blocks specific URLs",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "options.html",
+    "default_icon": "icon.png"
+  },
+  "hidden": true,
+  "web_accessible_resources": ["warning.html"]
+}
