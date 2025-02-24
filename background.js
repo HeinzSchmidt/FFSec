@@ -1,5 +1,5 @@
 let blockedUrls = [];
-const GITHUB_LIST_URL = "https://raw.githubusercontent.com/yourusername/blocklist/main/blocked_urls.json";
+const GITHUB_LIST_URL = "https://raw.githubusercontent.com/HeinzSchmidt/kidsblock/eac4da4c428fefb16b30256b5faca37b0caa6d94/streaming.json";
 const WARNING_PAGE = browser.runtime.getURL("warning.html");
 
 async function fetchBlockedUrls() {
